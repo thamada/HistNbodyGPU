@@ -1,0 +1,11 @@
+BIN = ./gen-plum.exe
+
+all:
+	$(BIN) 1; mv ./data.inp ./data.inp.001024
+	$(BIN) 2; mv ./data.inp ./data.inp.002048
+	$(BIN) 4; mv ./data.inp ./data.inp.004096
+	$(BIN) 8; mv ./data.inp ./data.inp.008192
+	$(BIN) 16; mv ./data.inp ./data.inp.016384
+	$(BIN) 32; mv ./data.inp ./data.inp.032768
+	$(BIN) 64; mv ./data.inp ./data.inp.065536
+	$(BIN) 128; mv ./data.inp ./data.inp.131072
